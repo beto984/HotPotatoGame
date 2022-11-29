@@ -28,5 +28,10 @@ public class Potato : MonoBehaviour
             Debug.Log("Destroy potato");
             Destroy(this.gameObject);
         }
+
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(col.gameObject);
+        }
     }
 }
