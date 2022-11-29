@@ -31,7 +31,8 @@ public class Potato : MonoBehaviour
         if (col.gameObject.CompareTag("Enemy"))
         {
             Destroy(col.gameObject);
-            Vector2 bounceDirection = new Vector2(-0.3f, 0.5f);
+            this._rigidbody.velocity = new Vector2(0, 0);
+            Vector2 bounceDirection = new Vector2(0f, 0.5f);
             
             Project(bounceDirection);
         }
