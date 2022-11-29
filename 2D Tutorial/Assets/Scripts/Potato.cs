@@ -18,7 +18,6 @@ public class Potato : MonoBehaviour
     {
         _rigidbody.AddForce(direction * speed);
         
-        Destroy(this, maxLifeTime);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -32,6 +31,9 @@ public class Potato : MonoBehaviour
         if (col.gameObject.CompareTag("Enemy"))
         {
             Destroy(col.gameObject);
+            Vector2 bounceDirection = new Vector2(-0.3f, 0.5f);
+            
+            Project(bounceDirection);
         }
     }
 }

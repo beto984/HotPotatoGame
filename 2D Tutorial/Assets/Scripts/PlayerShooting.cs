@@ -9,7 +9,13 @@ public class PlayerShooting : MonoBehaviour
     public Potato potatoPrefab;
     private bool potatoInHand = true;
     private float dirX = 0f;
-    
+    private SpriteRenderer sprite;
+
+    void Start()
+    {
+        sprite = GetComponent<SpriteRenderer>();
+
+    }
     // Update is called once per frame
     void Update()
     {
@@ -22,8 +28,18 @@ public class PlayerShooting : MonoBehaviour
 
     private void Shoot(float dirX, float shootingDistance)
     {
-        Vector3 spawnPosition = new Vector3(this.transform.position.x + shootingDistance, this.transform.position.y,
-            this.transform.position.z);
+        Vector3 spawnPosition;
+        if (sprite.flipX)
+        {
+            spawnPosition = new Vector3(this.transform.position.x - shootingDistance, this.transform.position.y,
+                this.transform.position.z);
+        }
+        else
+        {
+            spawnPosition = new Vector3(this.transform.position.x + shootingDistance, this.transform.position.y,
+                this.transform.position.z);
+        }
+        
 
         if (potatoInHand)
         {
@@ -37,7 +53,20 @@ public class PlayerShooting : MonoBehaviour
                 Potato potato = Instantiate(potatoPrefab, spawnPosition, this.transform.rotation);
                 potato.Project(-transform.right);
             }
-
+            else
+            {
+                if (sprite.flipX)
+                {
+                    Potato potato = Instantiate(potatoPrefab, spawnPosition, this.transform.rotation);
+                    potato.Project(-transform.right);
+                }
+                else
+                {
+                    Potato potato = Instantiate(potatoPrefab, spawnPosition, this.transform.rotation);
+                    potato.Project(transform.right);
+                }
+            }
+            
             potatoInHand = false;
         }
     }
