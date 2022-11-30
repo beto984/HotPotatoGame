@@ -36,5 +36,12 @@ public class Potato : MonoBehaviour
             
             Project(bounceDirection);
         }
+        
+        //If the potato hits colliders with the tag knives, it will get cut
+        if (col.gameObject.CompareTag("Knives"))
+        {
+            Debug.Log("Potato got cut in half");
+            Destroy(this.gameObject);
+        }
     }
 }
