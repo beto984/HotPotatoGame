@@ -43,7 +43,7 @@
   <ItemGroup>
      <Compile Include="Assets/Scripts/WayPointFollower.cs" />
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
-     <Compile Include="Assets/Scripts/EnemyRunning.cs" />
+     <Compile Include="Assets/Scripts/Enemy/EnemyRunning.cs" />
      <Compile Include="Assets/Scripts/Finish.cs" />
      <Compile Include="Assets/Scripts/PlayerShooting.cs" />
      <Compile Include="Assets/Scripts/StickyPlatform.cs" />
@@ -54,6 +54,7 @@
      <Compile Include="Assets/Scripts/PlayerLife.cs" />
      <Compile Include="Assets/Scripts/Potato.cs" />
      <Compile Include="Assets/Scripts/ItemCollector.cs" />
+     <Compile Include="Assets/Scripts/Enemy/EnemyChef.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />

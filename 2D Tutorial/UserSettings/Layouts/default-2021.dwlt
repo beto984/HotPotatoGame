@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 773
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 30
+  controlID: 85
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 31
+  controlID: 86
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 32
+  controlID: 87
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,10 +248,10 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
-  - {fileID: 18}
   - {fileID: 17}
+  - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 2
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -526,9 +526,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 61.817097, y: 1.5247805, z: 0.32578763}
+    m_Target: {x: 71.81695, y: 3.2693338, z: 0.30731294}
     speed: 2
-    m_Value: {x: 61.817097, y: 1.5247805, z: 0.32578763}
+    m_Value: {x: 71.81695, y: 3.2693338, z: 0.30731294}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -579,9 +579,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.09807
+    m_Target: 9.043906
     speed: 2
-    m_Value: 2.09807
+    m_Value: 9.043906
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -655,7 +655,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -798,22 +798,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 40
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: 40
   m_LastProjectPath: /Users/hang-work/Documents/GitHub/HotPotatoGame/2D Tutorial
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 127}
-    m_SelectedIDs: 96670000
-    m_LastClickedID: 26518
-    m_ExpandedIDs: 00000000686700006a6700006c6700006e67000000ca9a3b
+    scrollPos: {x: 0, y: 143}
+    m_SelectedIDs: 88670000
+    m_LastClickedID: 26504
+    m_ExpandedIDs: 00000000686700006a6700006c6700006e6700008c67000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -869,7 +869,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000ee7a0000d47300004664000050740000a86b0000d8710000688e0000489d0000409f00008c9d0000fa9c000062d60000
+    m_ExpandedInstanceIDs: c6230000ee7a0000d47300004664000050740000a86b0000d8710000688e0000489d0000409f00008c9d0000fa9c000062d60000d2670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -945,7 +945,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -216
+    x: -217
     y: -480
     width: 1439
     height: 185
@@ -959,6 +959,7 @@ MonoBehaviour:
     - {fileID: -1819984367371370174, guid: 3823a8e58575e484dbab7cfc8d912359, type: 2}
     - {fileID: -7997554118326289374, guid: e5854a6b824c30c448193290d7a45ee2, type: 2}
     - {fileID: -3484699520670226828, guid: ff0120942dacd4e33879a4e7575474bc, type: 2}
+    - {fileID: -4665321903442805160, guid: 47d302daf260b4699b9cca470a83cffc, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.81966305
       e01: 0
@@ -1024,10 +1025,26 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: ff0120942dacd4e33879a4e7575474bc, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 47d302daf260b4699b9cca470a83cffc, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -3484699520670226828, guid: ff0120942dacd4e33879a4e7575474bc, type: 2}
+  - m_Target: {fileID: -4665321903442805160, guid: 47d302daf260b4699b9cca470a83cffc, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1060,17 +1077,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 539
+    x: -217
+    y: -480
     width: 1439
-    height: 182
+    height: 185
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -21886
+  m_LastSelectedObjectID: -2844
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
