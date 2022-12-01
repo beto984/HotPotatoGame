@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6367560908665664636, guid: 40de9a8703e2e5a47882b0b86451c741, type: 3}
+  m_Sprite: {fileID: 76634936, guid: d810a6935697f4f0aa19079d4f229865, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,18 +128,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.05927211, y: -0.29636222}
+  m_Offset: {x: -0.04179907, y: 0.022642553}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 2.03125, y: 1.875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0121261, y: 1.3282456}
+  m_Size: {x: 1.568016, y: 1.5872396}
   m_EdgeRadius: 0
 --- !u!114 &8373862789099528592
 MonoBehaviour:
@@ -506,4 +506,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99259b1fc543349d9ba5435220998dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootingDistance: 1.5
   potatoPrefab: {fileID: 2194181885260204901, guid: 83dc5cdfd20694ee986e7def93eec295, type: 3}
