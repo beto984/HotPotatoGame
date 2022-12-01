@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 8373862789099528607}
   - component: {fileID: 8373862789099528606}
   - component: {fileID: 8373862789099528601}
-  - component: {fileID: -3390657433424153531}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -128,7 +127,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04179907, y: 0.022642553}
+  m_Offset: {x: 0.06678295, y: 0.022642553}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -139,7 +138,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.568016, y: 1.5872396}
+  m_Size: {x: 1.350852, y: 1.5872396}
   m_EdgeRadius: 0
 --- !u!114 &8373862789099528592
 MonoBehaviour:
@@ -153,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04b769b7c010934193e575bc11b2878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootingDistance: 1
+  potatoPrefab: {fileID: 2194181885260204901, guid: 83dc5cdfd20694ee986e7def93eec295, type: 3}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
@@ -494,17 +495,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-3390657433424153531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8373862789099528597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99259b1fc543349d9ba5435220998dc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootingDistance: 1.5
-  potatoPrefab: {fileID: 2194181885260204901, guid: 83dc5cdfd20694ee986e7def93eec295, type: 3}
