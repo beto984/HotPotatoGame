@@ -75,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.idle_no_potato;
         }
 
+        
         if (rb.velocity.y > .1f)
         {
             state = MovementState.jumping;
@@ -104,16 +105,19 @@ public class PlayerMovement : MonoBehaviour
 
         if (potatoInHand)
         {
+            //if Moving right
             if (dirX > 0)
             {
                 Potato potato = Instantiate(potatoPrefab, spawnPosition, this.transform.rotation);
                 potato.Project(transform.right);
             }
+            //if Moving left
             else if(dirX < 0)
             {
                 Potato potato = Instantiate(potatoPrefab, spawnPosition, this.transform.rotation);
                 potato.Project(-transform.right);
             }
+            //if Idle, check for the sprite flip and shoot that way
             else
             {
                 if (sprite.flipX)
@@ -129,6 +133,7 @@ public class PlayerMovement : MonoBehaviour
             }
             
             potatoInHand = false;
+            anim.SetBool("potatoInHand", false);
         }
     }
     private void OnCollisionEnter2D(Collision2D col)
@@ -136,6 +141,7 @@ public class PlayerMovement : MonoBehaviour
         if (col.gameObject.CompareTag("Potato"))
         {
             potatoInHand = true; 
+            anim.SetBool("potatoInHand", true);
         }
     }
     private bool IsGrounded()
