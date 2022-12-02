@@ -54,17 +54,18 @@ public class PlayerMovement : MonoBehaviour
     private void UpdateAnimationState()
     {
         MovementState state;
-        
-        if (dirX > 0f)
+        if (dirX != 0f)
         {
             state = MovementState.running;
-            sprite.flipX = false;
+            if (dirX > 0f)
+            {
+                sprite.flipX = false;
 
-        }
-        else if (dirX < 0f)
-        {
-            state = MovementState.running;
-            sprite.flipX = true;
+            }
+            else if (dirX < 0f)
+            {
+                sprite.flipX = true;
+            }
         }
         else if(potatoInHand)
         {
