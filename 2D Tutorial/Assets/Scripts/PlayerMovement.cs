@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private bool potatoInHand = true;
 
     [SerializeField] private LayerMask jumpableGround; 
-    private enum MovementState { idle, running, jumping, falling,idle_no_potato }
+    private enum MovementState { idle, running, jumping, falling, idle_no_potato}
 
     [SerializeField] private AudioSource jumpSoundEffect;
     
@@ -48,19 +48,25 @@ public class PlayerMovement : MonoBehaviour
         {
             Shoot(dirX, shootingDistance);
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            anim.SetBool("isJuggling", true);
+        }
+        
         UpdateAnimationState();
     }
 
     private void UpdateAnimationState()
     {
         MovementState state;
+        //Check if the player is moving 
         if (dirX != 0f)
         {
             state = MovementState.running;
             if (dirX > 0f)
             {
                 sprite.flipX = false;
-
             }
             else if (dirX < 0f)
             {
@@ -86,8 +92,10 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.falling;
         }
 
-        anim.SetInteger("state",(int) state);
+        anim.SetInteger("state", (int)state);
     }
+
+    
     
     private void Shoot(float dirX, float shootingDistance)
     {
