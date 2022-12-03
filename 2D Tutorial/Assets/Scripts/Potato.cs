@@ -1,0 +1,47 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Potato : MonoBehaviour
+{
+    private Rigidbody2D _rigidbody;
+    [SerializeField] public float speed = 5;
+    [SerializeField] public float maxLifeTime = 20; 
+
+    private void Awake()
+    {
+        _rigidbody = GetComponent<Rigidbody2D>();
+    }
+
+    public void Project(Vector2 direction)
+    {
+        _rigidbody.AddForce(direction * speed);
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name == "Player")
+        {
+            Debug.Log("Destroy potato");
+            Destroy(this.gameObject);
+        }
+
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(col.gameObject);
+            this._rigidbody.velocity = new Vector2(0, 0);
+            Vector2 bounceDirection = new Vector2(0f, 0.5f);
+            
+            Project(bounceDirection);
+        }
+        
+        //If the potato hits colliders with the tag knives, it will get cut
+        if (col.gameObject.CompareTag("Knives"))
+        {
+            Debug.Log("Potato got cut in half");
+            Destroy(this.gameObject);
+        }
+    }
+}
