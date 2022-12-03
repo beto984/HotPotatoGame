@@ -27,7 +27,16 @@ public class PlayerLife : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("Enemy collider");
             LoseLife();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Oven"))
+        {
+            anim.SetBool("potatoInHand", true);
         }
     }
 

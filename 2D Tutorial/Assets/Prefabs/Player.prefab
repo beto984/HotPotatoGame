@@ -207,6 +207,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSoundEffect: {fileID: 8373862789099528601}
+  lives:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!82 &8373862789099528607
 AudioSource:
   m_ObjectHideFlags: 0

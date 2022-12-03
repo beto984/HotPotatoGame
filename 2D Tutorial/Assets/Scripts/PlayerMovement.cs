@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     [SerializeField] private float shootingDistance = 0f; 
     public Potato potatoPrefab;
-    private bool potatoInHand = true;
 
     [SerializeField] private LayerMask jumpableGround; 
     private enum MovementState { idle, running, jumping, falling, idle_no_potato}
@@ -53,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("isJuggling", true);
         }
-        
+
         UpdateAnimationState();
     }
 
@@ -73,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
                 sprite.flipX = true;
             }
         }
-        else if(potatoInHand)
+        else if(anim.GetBool("potatoInHand"))
         {
             state = MovementState.idle;
         }
@@ -112,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
 
-        if (potatoInHand)
+        if (anim.GetBool("potatoInHand"))
         {
             //if Moving right
             if (dirX > 0)
@@ -141,7 +140,6 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
             
-            potatoInHand = false;
             anim.SetBool("potatoInHand", false);
         }
     }
@@ -149,7 +147,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Potato"))
         {
-            potatoInHand = true; 
             anim.SetBool("potatoInHand", true);
         }
     }
