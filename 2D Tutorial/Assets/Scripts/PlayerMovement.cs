@@ -60,38 +60,41 @@ public class PlayerMovement : MonoBehaviour
     {
         MovementState state;
         //Check if the player is moving 
-        if (dirX != 0f)
+        if (!anim.GetBool("death"))
         {
-            state = MovementState.running;
-            if (dirX > 0f)
+            if (dirX != 0f)
             {
-                sprite.flipX = false;
+                state = MovementState.running;
+                if (dirX > 0f)
+                {
+                    sprite.flipX = false;
+                }
+                else if (dirX < 0f)
+                {
+                    sprite.flipX = true;
+                }
             }
-            else if (dirX < 0f)
+            else if (anim.GetBool("potatoInHand"))
             {
-                sprite.flipX = true;
+                state = MovementState.idle;
             }
-        }
-        else if(anim.GetBool("potatoInHand"))
-        {
-            state = MovementState.idle;
-        }
-        else
-        {
-            state = MovementState.idle_no_potato;
-        }
+            else
+            {
+                state = MovementState.idle_no_potato;
+            }
 
-        
-        if (rb.velocity.y > .1f)
-        {
-            state = MovementState.jumping;
-        }
-        else if (rb.velocity.y < -.1f)
-        {
-            state = MovementState.falling;
-        }
 
-        anim.SetInteger("state", (int)state);
+            if (rb.velocity.y > .1f)
+            {
+                state = MovementState.jumping;
+            }
+            else if (rb.velocity.y < -.1f)
+            {
+                state = MovementState.falling;
+            }
+
+            anim.SetInteger("state", (int)state);
+        }
     }
 
     
