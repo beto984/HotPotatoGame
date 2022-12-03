@@ -9,6 +9,7 @@ TagManager:
   - Potato
   - Enemy
   - Knives
+  - Oven
   layers:
   - Default
   - TransparentFX
