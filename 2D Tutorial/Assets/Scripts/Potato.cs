@@ -27,21 +27,25 @@ public class Potato : MonoBehaviour
             Debug.Log("Destroy potato");
             Destroy(this.gameObject);
         }
-
-        if (col.gameObject.CompareTag("Enemy"))
+        
+        // if the potato hits the CapsuleCollider which refers to the collision with knives
+        // the potato gets destroyed but the enemy survives
+        if (col.collider == col.gameObject.GetComponent<CapsuleCollider2D>())
         {
+            Debug.Log("Potato got sliced");
+            Destroy(this.gameObject);
+        }
+        
+        // if the potato hits the PolygonCollider which refers to the collision with the enemies body
+        // the potato destroys the enemy
+        if (col.collider == col.gameObject.GetComponent<PolygonCollider2D>())
+        {
+            Debug.Log("Enemy got hit");
             Destroy(col.gameObject);
             this._rigidbody.velocity = new Vector2(0, 0);
             Vector2 bounceDirection = new Vector2(0f, 0.5f);
             
             Project(bounceDirection);
-        }
-        
-        //If the potato hits colliders with the tag knives, it will get cut
-        if (col.gameObject.CompareTag("Knives"))
-        {
-            Debug.Log("Potato got cut in half");
-            Destroy(this.gameObject);
         }
     }
 }

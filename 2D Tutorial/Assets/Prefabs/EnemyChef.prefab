@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1778829162227887947}
   - component: {fileID: 1778829162227887946}
   - component: {fileID: 1778829162227887945}
+  - component: {fileID: 1778829161661827346}
   m_Layer: 7
   m_Name: EnemyChef
   m_TagString: Enemy
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 2002222853
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -789059075, guid: 3b983d94f21fe47dfa89384c05c141b4, type: 3}
+  m_Sprite: {fileID: 1678435583, guid: ab8988369e5af4ffcb8741757fe46915, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -183,9 +184,14 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 0.7416458, y: 1.5225632}
       - {x: -0.08668172, y: 1.4933723}
-      - {x: -0.9673389, y: 0.48811936}
-      - {x: -0.0030784607, y: -1.5180559}
+      - {x: -0.09030914, y: 1.2166317}
+      - {x: 0.043166757, y: 1.0786746}
+      - {x: 0.111824036, y: 0.8302791}
+      - {x: 0.09445953, y: -0.91681755}
+      - {x: 0.107723236, y: -1.5180559}
       - {x: 1.0554012, y: -1.5080496}
+      - {x: 0.8524399, y: -0.28756857}
+      - {x: 0.8103485, y: 0.91391635}
       - {x: 0.9379848, y: 1.3025616}
 --- !u!114 &1778829162227887945
 MonoBehaviour:
@@ -200,3 +206,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRunSpeed: 5
+--- !u!70 &1778829161661827346
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778829162227887944}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5838852, y: -0.02162534}
+  m_Size: {x: 1.213501, y: 1.7911812}
+  m_Direction: 0
