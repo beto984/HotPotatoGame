@@ -8,6 +8,7 @@ public class Finish : MonoBehaviour
 {
     private AudioSource finishSoundEffect;
     private bool levelCompleted = false;
+
     void Start()
     {
         finishSoundEffect = GetComponent<AudioSource>();
