@@ -24,11 +24,11 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("Trap"))
         {
             Die();
-        }
+        }   
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Enemy collider");
-            LoseLife();
+            Die();
         }
     }
 
