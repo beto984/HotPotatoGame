@@ -6,11 +6,15 @@ using UnityEngine;
 public class Potato : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
+    private BoxCollider2D coll;
     [SerializeField] public float speed = 5;
     [SerializeField] public float maxLifeTime = 20; 
+    [SerializeField] private LayerMask jumpableGround; 
 
     private void Awake()
     {
+        coll = GetComponent<BoxCollider2D>();
+
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -18,6 +22,14 @@ public class Potato : MonoBehaviour
     {
         _rigidbody.AddForce(direction * speed);
         
+    }
+
+    public void Update()
+    {
+        if (IsGrounded())
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -31,8 +43,7 @@ public class Potato : MonoBehaviour
         // if the potato hits the CapsuleCollider which refers to the collision with knives
         // the potato gets destroyed but the enemy survives
         if (col.collider == col.gameObject.GetComponent<CapsuleCollider2D>())
-        {
-            Debug.Log("Potato got sliced");
+        { 
             Destroy(this.gameObject);
         }
         
@@ -47,5 +58,10 @@ public class Potato : MonoBehaviour
             
             Project(bounceDirection);
         }
+    }
+    
+    private bool IsGrounded()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround); // creates a box around the player that has the same size as the collider of the player 
     }
 }

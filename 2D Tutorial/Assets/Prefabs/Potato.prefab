@@ -148,3 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 400
   maxLifeTime: 10
+  jumpableGround:
+    serializedVersion: 2
+    m_Bits: 64
