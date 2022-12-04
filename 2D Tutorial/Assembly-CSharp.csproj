@@ -45,7 +45,7 @@
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/Enemy/EnemyRunning.cs" />
      <Compile Include="Assets/Scripts/Finish.cs" />
-     <Compile Include="Assets/HotDeath.cs" />
+     <Compile Include="Assets/Scripts/HotDeath.cs" />
      <Compile Include="Assets/Scripts/PlayerShooting.cs" />
      <Compile Include="Assets/Scripts/StickyPlatform.cs" />
      <Compile Include="Assets/Scripts/Rotate.cs" />
@@ -54,7 +54,7 @@
      <Compile Include="Assets/Scripts/CameraController.cs" />
      <Compile Include="Assets/Scripts/StartMenu.cs" />
      <Compile Include="Assets/Scripts/PlayerLife.cs" />
-     <Compile Include="Assets/JuggleExit.cs" />
+     <Compile Include="Assets/Scripts/JuggleExit.cs" />
      <Compile Include="Assets/Scripts/Potato.cs" />
      <Compile Include="Assets/Scripts/ItemCollector.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -73,6 +73,7 @@
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <None Include="Assets/StreamingAssets/UnityServicesProjectConfiguration.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
