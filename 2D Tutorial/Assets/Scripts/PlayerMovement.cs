@@ -39,8 +39,8 @@ public class PlayerMovement : MonoBehaviour
             jumpSoundEffect.Play();
             rb.velocity = new Vector2(0, jumpForce);
             
-        }
-        if (Input.GetKeyDown("space"))
+        } 
+        if (Input.GetButtonDown("Fire1"))
         {
             Shoot(dirX, shootingDistance);
         }
