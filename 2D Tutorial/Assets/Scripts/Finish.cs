@@ -17,8 +17,9 @@ public class Finish : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player" && !levelCompleted)
+        if (collision.gameObject.CompareTag("Potato") && !levelCompleted)
         {   
+            Debug.Log("Potato hits flag");
             levelCompleted = true;
             Invoke("CompleteLevel", 2f);
             finishSoundEffect.Play();
