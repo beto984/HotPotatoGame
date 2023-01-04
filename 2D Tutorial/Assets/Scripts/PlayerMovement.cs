@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
             Shoot(dirX, shootingDistance);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetButtonDown("Juggle"))
         {
             anim.SetBool("isJuggling", true);
         }
