@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\JuggleExit.cs" />
      <Compile Include="Assets\Scripts\Potato.cs" />
      <Compile Include="Assets\Scripts\ItemCollector.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
