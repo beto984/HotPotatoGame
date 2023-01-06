@@ -56,7 +56,7 @@ public class Potato : MonoBehaviour
             Debug.Log("Enemy got hit");
             Destroy(col.gameObject);
             this._rigidbody.velocity = new Vector2(0, 0);
-            Vector2 bounceDirection = new Vector2(0f, 0.5f);
+            Vector2 bounceDirection = new Vector2(0f, 0.34f);
             
             Project(bounceDirection);
         }
