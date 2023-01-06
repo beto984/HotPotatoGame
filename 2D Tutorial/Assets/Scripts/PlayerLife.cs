@@ -46,7 +46,7 @@ public class PlayerLife : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
         anim.SetInteger("state", 0);
-        
+
         Invoke("RestartLevel",2);
     }
 
