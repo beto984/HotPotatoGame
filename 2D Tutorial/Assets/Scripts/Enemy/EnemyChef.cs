@@ -7,11 +7,14 @@ public class EnemyChef : MonoBehaviour
     [SerializeField] public float enemyRunSpeed = 5f;
     
     private Rigidbody2D enemyRigidbody2D;
+
+    public Animator myAnimator;
     // Start is called before the first frame update
     void Start()
     {
         //init EnemyRigidBody
         enemyRigidbody2D = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
 
     }
 
@@ -47,5 +50,10 @@ public class EnemyChef : MonoBehaviour
     private bool IsFacingLeft()
     {
         return transform.localScale.x > 0;
+    }
+
+    public void SlicePotato()
+    {
+        myAnimator.SetTrigger("slice");
     }
 }

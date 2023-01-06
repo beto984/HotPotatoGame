@@ -45,6 +45,8 @@ public class Potato : MonoBehaviour
         if (col.collider == col.gameObject.GetComponent<CapsuleCollider2D>())
         { 
             Destroy(this.gameObject);
+            //Calls the methods in the EnemyChef script that shows the animation for slicing the potato
+            col.gameObject.GetComponent<EnemyChef>().SlicePotato();
         }
         
         // if the potato hits the PolygonCollider which refers to the collision with the enemies body
