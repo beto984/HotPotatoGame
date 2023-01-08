@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1778829162227887948}
   - component: {fileID: 1778829162227887947}
   - component: {fileID: 1778829162227887946}
-  - component: {fileID: 1778829162227887945}
   - component: {fileID: 1778829161661827346}
+  - component: {fileID: 5953459096694740160}
   m_Layer: 7
   m_Name: HungryDog
   m_TagString: Enemy
@@ -186,8 +186,8 @@ PolygonCollider2D:
       - {x: 0.76020586, y: 0.34648097}
       - {x: 0.3592434, y: 0.1439513}
       - {x: -0.09915578, y: 0.13893443}
-      - {x: -0.39032555, y: 0.7489806}
-      - {x: -0.8581524, y: 0.8818845}
+      - {x: -0.39032555, y: 0.8164732}
+      - {x: -0.77137566, y: 0.83367556}
       - {x: -0.57774353, y: 0.45465088}
       - {x: -0.5478821, y: -0.16939926}
       - {x: -0.5396805, y: -1.063252}
@@ -197,20 +197,6 @@ PolygonCollider2D:
       - {x: 1.023365, y: -0.6596613}
       - {x: 0.9544945, y: -0.15248185}
       - {x: 1.1326698, y: 0.15272585}
---- !u!114 &1778829162227887945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778829162227887944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afdf6aa5c28d4cec9d936af4122f184, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyRunSpeed: 5
-  myAnimator: {fileID: 0}
 --- !u!70 &1778829161661827346
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -224,6 +210,20 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.981678, y: -0.24295264}
-  m_Size: {x: 0.27327728, y: 1.7597255}
+  m_Offset: {x: -0.981678, y: -0.09832573}
+  m_Size: {x: 0.27327728, y: 2.0489793}
   m_Direction: 0
+--- !u!114 &5953459096694740160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778829162227887944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79db679ec17e74d3cb832b2beb8a3cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyRunSpeed: 5
+  myAnimator: {fileID: 0}
