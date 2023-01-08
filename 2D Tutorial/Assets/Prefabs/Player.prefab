@@ -79,9 +79,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -858464123
+  m_SortingLayer: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1565468234, guid: 0434277885bb44d8dbfcd7651275a3e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -127,18 +127,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.072119474, y: -0.064667344}
+  m_Offset: {x: -0.030155182, y: -0.5535331}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.03125, y: 2.03125}
+    oldSize: {x: 4.0625, y: 4.0625}
     newSize: {x: 2.03125, y: 1.875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6286569, y: 1.7618594}
+  m_Size: {x: 2.3840141, y: 2.7395906}
   m_EdgeRadius: 0
 --- !u!114 &8373862789099528592
 MonoBehaviour:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04b769b7c010934193e575bc11b2878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingDistance: 1
+  shootingDistance: 1.5
   potatoPrefab: {fileID: 2194181885260204901, guid: 83dc5cdfd20694ee986e7def93eec295, type: 3}
   jumpableGround:
     serializedVersion: 2
