@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 2002222853
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1526927943, guid: 5258377ca86b44ea3bcb1d38065a2abf, type: 3}
+  m_Sprite: {fileID: -584505317, guid: b352237b024b44773b06729586ae5bbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -148,7 +148,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3076923, y: 1.9230769}
+    oldSize: {x: 3.7558687, y: 3.1250002}
     newSize: {x: 2.7272727, y: 3.0454545}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -174,7 +174,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3076923, y: 1.9230769}
+    oldSize: {x: 3.7558687, y: 3.1250002}
     newSize: {x: 2.7272727, y: 3.0454545}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRunSpeed: 5
+  myAnimator: {fileID: 0}
 --- !u!70 &1778829161661827346
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
