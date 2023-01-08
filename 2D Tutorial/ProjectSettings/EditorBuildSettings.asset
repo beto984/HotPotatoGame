@@ -18,8 +18,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Final scenes/Tuto 2.unity
     guid: 3e7f6315226e54f47a88603448a041e3
   - enabled: 1
+    path: Assets/Scenes/Pat's Levels/Level 2-2.unity
+    guid: f3f1da64206e04253a8ca5ea6efceff5
+  - enabled: 1
     path: Assets/Scenes/Final scenes/Tuto 3.unity
     guid: be40cf184b0eeb7429ab6504b1a82eb8
+  - enabled: 1
+    path: Assets/Scenes/Pat's Levels/Level 3-3.unity
+    guid: 8639e4dace0eb479d9da41f5cfddb278
   - enabled: 1
     path: Assets/Scenes/Final scenes/End Screen.unity
     guid: 9df06d7613571b245aeac026985e5f27
