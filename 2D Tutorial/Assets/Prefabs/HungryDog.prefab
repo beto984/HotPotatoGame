@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1778829162227887947}
   - component: {fileID: 1778829162227887946}
   - component: {fileID: 1778829161661827346}
-  - component: {fileID: 5953459096694740160}
+  - component: {fileID: -1013599383469101532}
   m_Layer: 7
   m_Name: HungryDog
   m_TagString: Enemy
@@ -213,7 +213,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.981678, y: -0.09832573}
   m_Size: {x: 0.27327728, y: 2.0489793}
   m_Direction: 0
---- !u!114 &5953459096694740160
+--- !u!114 &-1013599383469101532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1778829162227887944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79db679ec17e74d3cb832b2beb8a3cfe, type: 3}
+  m_Script: {fileID: 11500000, guid: 5afdf6aa5c28d4cec9d936af4122f184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRunSpeed: 5
