@@ -54,7 +54,7 @@ public class PlayerLife : MonoBehaviour
         {
             Debug.Log("fire death");
             rb.bodyType = RigidbodyType2D.Static;
-            anim.SetTrigger("deathTrip");
+            anim.SetTrigger("deathFire");
             anim.SetInteger("state", 0);
             
             Invoke("RestartLevel",1);
