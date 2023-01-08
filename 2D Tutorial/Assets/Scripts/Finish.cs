@@ -8,10 +8,12 @@ public class Finish : MonoBehaviour
 {
     private AudioSource finishSoundEffect;
     private bool levelCompleted = false;
+    private Animator anim;
 
     void Start()
     {
         finishSoundEffect = GetComponent<AudioSource>();
+        anim = GetComponent<Animator>();
 
     }
 
@@ -21,6 +23,7 @@ public class Finish : MonoBehaviour
         {   
             Debug.Log("Potato hits flag");
             levelCompleted = true;
+            anim.SetBool("potatoDelivered",true);
             Invoke("CompleteLevel", 2f);
             finishSoundEffect.Play();
 
