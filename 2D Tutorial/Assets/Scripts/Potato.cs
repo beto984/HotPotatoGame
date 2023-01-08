@@ -9,12 +9,13 @@ public class Potato : MonoBehaviour
     private BoxCollider2D coll;
     [SerializeField] public float speed = 5;
     [SerializeField] public float maxLifeTime = 20; 
-    [SerializeField] private LayerMask jumpableGround; 
+    [SerializeField] private LayerMask jumpableGround;
+    private GameObject player;
 
     private void Awake()
     {
         coll = GetComponent<BoxCollider2D>();
-
+        player = GameObject.FindGameObjectWithTag("Player");
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -28,6 +29,8 @@ public class Potato : MonoBehaviour
     {
         if (IsGrounded())
         {
+            Debug.Log("enter is grounded");
+            player.gameObject.GetComponent<PlayerLife>().Die();
             Destroy(this.gameObject);
         }
     }
