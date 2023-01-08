@@ -35,6 +35,15 @@ public class Potato : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        //destroys the potato when it touches the target
+        if (col.gameObject.tag == "Finish")
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.name == "Player")
@@ -42,6 +51,8 @@ public class Potato : MonoBehaviour
             Debug.Log("Destroy potato");
             Destroy(this.gameObject);
         }
+        
+
         
         // if the potato hits the CapsuleCollider which refers to the collision with knives
         // the potato gets destroyed but the enemy survives
