@@ -39,6 +39,10 @@ public class PlayerLife : MonoBehaviour
         {
             anim.SetBool("potatoInHand", true);
         }
+        if (collision.gameObject.CompareTag("fire"))
+        {
+            Die();
+        }
     }
 
     public void Die()
