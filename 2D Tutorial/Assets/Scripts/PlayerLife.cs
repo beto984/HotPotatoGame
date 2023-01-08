@@ -39,9 +39,25 @@ public class PlayerLife : MonoBehaviour
         {
             anim.SetBool("potatoInHand", true);
         }
-        if (collision.gameObject.CompareTag("fire"))
+
+        if (collision.gameObject.CompareTag(("Water")))
         {
-            Die();
+            Debug.Log("water trip");
+            rb.bodyType = RigidbodyType2D.Static;
+            anim.SetTrigger("deathTrip");
+            anim.SetInteger("state", 0);
+            
+            Invoke("RestartLevel",1);
+        }
+        
+        if (collision.gameObject.CompareTag(("Fire")))
+        {
+            Debug.Log("fire death");
+            rb.bodyType = RigidbodyType2D.Static;
+            anim.SetTrigger("deathTrip");
+            anim.SetInteger("state", 0);
+            
+            Invoke("RestartLevel",1);
         }
     }
 

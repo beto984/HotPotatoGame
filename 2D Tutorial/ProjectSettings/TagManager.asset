@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Knives
   - Oven
+  - Water
+  - Fire
   layers:
   - Default
   - TransparentFX
