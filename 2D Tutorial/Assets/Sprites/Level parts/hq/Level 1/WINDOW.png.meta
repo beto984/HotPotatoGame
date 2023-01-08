@@ -120,9 +120,9 @@ TextureImporter:
       name: WINDOW_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 329
+        width: 322
         height: 479
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,9 +141,9 @@ TextureImporter:
       name: WINDOW_1
       rect:
         serializedVersion: 2
-        x: 330
+        x: 322
         y: 0
-        width: 329
+        width: 322
         height: 479
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -162,9 +162,9 @@ TextureImporter:
       name: WINDOW_2
       rect:
         serializedVersion: 2
-        x: 659
+        x: 644
         y: 0
-        width: 329
+        width: 322
         height: 479
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -175,27 +175,6 @@ TextureImporter:
       bones: []
       spriteID: 8239009213fbf1e41869d2254b61815b
       internalID: 1443736352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINDOW_3
-      rect:
-        serializedVersion: 2
-        x: 988
-        y: 0
-        width: 329
-        height: 479
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df04e19175314ff488e09434c41a09fe
-      internalID: -1746898070
       vertices: []
       indices: 
       edges: []
@@ -214,7 +193,6 @@ TextureImporter:
       WINDOW_2: 1443736352
       WINDOW_0: 2049685309
       WINDOW_1: -1662222597
-      WINDOW_3: -1746898070
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
