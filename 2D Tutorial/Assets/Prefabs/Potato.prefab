@@ -146,9 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb9c9cfd3e1b748ff8939b2f537ff634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 450
+  speed: 600
   maxLifeTime: 10
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
-  player: {fileID: 8373862789099528597, guid: 2845c5632df27664799c3df85b6aacf5, type: 3}
