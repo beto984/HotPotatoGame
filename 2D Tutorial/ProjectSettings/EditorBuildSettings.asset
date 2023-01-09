@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Final scenes/Start Screen.unity
     guid: bfe865eb3293c6f478b6cc4aacd63943
   - enabled: 1
-    path: Assets/Scenes/Final scenes/Tuto1.unity
+    path: Assets/Scenes/Final scenes/Tuto 1.unity
     guid: e9a61dc8c8bbcdb46bf6f4da1ef59b05
   - enabled: 1
     path: Assets/Scenes/Pat's Levels/Level 1-1.unity
